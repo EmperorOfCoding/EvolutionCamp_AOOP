@@ -1,5 +1,4 @@
 //Exercicio1
-
 let numero1 = prompt("Digite o primeiro número: ");
 let numero2 = prompt("Digite o segundo número: ");
 
@@ -12,8 +11,13 @@ alert(`A subtracao entre numero1 e numero2 é: ${numero1 / numero2}`);
 let a = 6;
 let b = 2;
 
-a = b;
-console.log(a);
+let temp = a
+
+
+a = b
+b = temp
+
+console.log(a, b);
 
 
 //Exercicio3
@@ -24,4 +28,6 @@ let like = true;
 console.log(`Hello, my name is ${name}.`);
 console.log(`I am ${age} years old.`);
 console.log(`It is ${like} that I like programming`);
+
+
 
