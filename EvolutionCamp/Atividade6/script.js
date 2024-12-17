@@ -1,17 +1,17 @@
 let fruits = ["apple", "banana", "cherry"];
 
 fruits.push("orange");
-console.log(fruits)
+alert(fruits)
 
 fruits.shift();
-console.log(fruits);
+alert(fruits);
 
 fruits.unshift("kiwi");
-console.log(fruits);
+alert(fruits);
 
 let removedFruit = fruits.pop();
-console.log(fruits);
-console.log(removedFruit);
+alert(fruits);
+alert(removedFruit);
 
 //Mostrando Array:
 

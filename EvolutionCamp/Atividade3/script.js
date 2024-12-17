@@ -14,8 +14,8 @@ let soma_ceil = Math.ceil(soma);
 var numero_aleatorio = Math.round(Math.random(numero_aleatorio) * 10);
 var numero_elevado = Math.pow(numero_aleatorio, 2);
 
-console.log(numero_aleatorio);
-console.log(numero_elevado);
+alert(numero_aleatorio);
+alert(numero_elevado);
 
 
 

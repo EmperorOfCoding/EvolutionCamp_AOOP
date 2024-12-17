@@ -25,9 +25,9 @@ let name = "Victor Martins";
 let age = 19;
 let like = true;
 
-console.log(`Hello, my name is ${name}.`);
-console.log(`I am ${age} years old.`);
-console.log(`It is ${like} that I like programming`);
+alert(`Hello, my name is ${name}.`);
+alert(`I am ${age} years old.`);
+alert(`It is ${like} that I like programming`);
 
 
 
