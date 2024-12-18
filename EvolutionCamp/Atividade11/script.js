@@ -1,5 +1,5 @@
-let number1 = prompt("Digite o primeiro número: ");
-let number2 = prompt("Digite o segundo número: ");
+let number1 = parseInt(prompt("Digite o primeiro número: "));
+let number2 = parseInt(prompt("Digite o segundo número: "));
 
 if (number1 > number2) {
 
