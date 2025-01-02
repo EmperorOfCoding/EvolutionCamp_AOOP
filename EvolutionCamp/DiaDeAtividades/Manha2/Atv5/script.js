@@ -1,27 +1,18 @@
 //Verificador de Palíndromos
-function verificarSePalindromo(string) {
+function verificarPalindromo(string) { //pera
 
-    if (typeof string !== "string") {
+    let string_normal = string; //pera
 
-        return "Insira uma string válida!";
-    }
-
-    const string_normal = string.toLowerCase().replace(/\s+/g, "");
-
-    const string_inversa = string.split("").reverse().join("");
+    let string_inversa = string.split("").reverse().join(""); //arep
 
     if (string_normal === string_inversa) {
 
-        return "É palíndromo";
+        return (`É palindromo!: ${string_normal} = ${string_inversa}`);
     }
 
     else {
-
-        return "Nao é palindromo";
+        return (`Nao é palindromo!: ${string_normal} !== ${string_inversa}`);
     }
-
 }
 
-
-alert(verificarSePalindromo("feijao"));
-alert(verificarSePalindromo("radar"));
+console.log(verificarPalindromo("gagau"));

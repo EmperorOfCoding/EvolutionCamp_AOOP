@@ -1,41 +1,40 @@
 //Calculadora Simples
-class CalculadoraSimples {
 
-    constructor(num1, num2) {
+function calculadoraSimples(num1, num2, operation) {
 
-        this.num1 = num1,
-            this.num2 = num2
-    };
+    if (operation !== "+" && operation !== "-" && operation !== "/" && operation !== "*" && operation !== "%") {
 
-    somarNumero() {
-
-        return this.num1 + this.num2;
+        return alert("Insira um método de operacao válido, ex: '+', '-', '/', '*', '%' ");
     }
 
-    subtrairNumero() {
+    if (operation === "+") {
 
-        return this.num1 - this.num2;
+        return alert(`A soma entre ${num1} e ${num2} é = ${num1 + num2}`);
     }
 
-    dividirNumero() {
+    else if (operation === "-") {
 
-        return this.num1 / this.num2;
+        return alert(`A subtracao entre ${num1} e ${num2} é = ${num1 - num2}`);
     }
 
-    produtoNumero() {
+    else if (operation === "/") {
 
-        return this.num1 * this.num2;
+        return alert(`A divisao entre ${num1} e ${num2} é = ${num1 / num2}`);
     }
 
-    restoNumero() {
+    else if (operation === "*") {
 
-        return this.num1 % this.num2;
+        return alert(`O produto entre ${num1} e ${num2} é = ${num1 * num2}`);
+    }
+
+    else {
+        return alert(`O resto entre ${num1} e ${num2} é = ${num1 % num2}`);
     }
 }
 
-const calculadora = new CalculadoraSimples(5, 5)
-alert(calculadora.somarNumero());
-alert(calculadora.subtrairNumero());
-alert(calculadora.dividirNumero());
-alert(calculadora.produtoNumero());
-alert(calculadora.restoNumero());
+let input1 = parseInt(prompt("Digite o primeiro número: "));
+let input2 = parseInt(prompt("Digite o segundo número: "));
+let input3 = prompt("Digite um operador, ex: '+', '-', '/', '*', '%'").toLowerCase().trim();
+
+
+calculadoraSimples(input1, input2, input3);

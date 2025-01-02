@@ -1,15 +1,47 @@
 //Fatorial de um Numero
-function calcularFatorial(num) {
+function calcularFatorial(N) { //5
 
-    let fatorial = 1
+    if (!Number.isInteger(N)) {
 
-    for (let i = num; i > 1; i--) {
-
-        fatorial *= i
+        return "Insira um valor inteiro!";
     }
 
-    return alert(`O fatorial de ${num} é: ${fatorial}`)
+    else if (N == 0) {
 
+        return 0;
+    }
+
+    else if (N === 1) {
+
+        return 1;
+    }
+
+    else {
+
+        let b = 2;
+        let a = 1;
+        let resultado = 0;
+
+        while (b <= N) { //b = 2
+
+            if (b === 2) {
+
+                resultado = a * b; //1 * 2 = 2
+                b++; //b vai passar a ser 3
+            }
+
+            else {
+
+                resultado *= b;
+                b++;
+            }
+
+
+        }
+
+        return resultado;
+    }
 }
 
-calcularFatorial(5)
+
+console.log(calcularFatorial(5));

@@ -91,6 +91,7 @@ class Car {
             name: newOwner.name,
             age: newOwner.age,
             address: newOwner.address
+
         };
 
         return `Ownership of this car ${this.model} has been transferred to ${newOwner.name}, Age: ${newOwner.age}, Address: ${newOwner.address}.`

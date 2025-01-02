@@ -1,13 +1,10 @@
 //Reverso de uma String
 function inverterString(string) {
 
-    if (typeof string !== "string") {
+    let array_invertido = string.split("").reverse().join("");
 
-        return "Insira uma string válida!"
-    }
+    return alert(`String Invertida: "${array_invertido}"`);
 
-    return string.split("").reverse().join("");
 }
 
-
-alert(inverterString("cacau"))
+inverterString("banana")
